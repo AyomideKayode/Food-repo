@@ -1,3 +1,4 @@
 # Food-repo
 A food website to order your meals.
-using html and css only
+Using HTML and CSS properties.
+Home page and Contact page
