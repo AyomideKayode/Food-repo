@@ -6,18 +6,21 @@
 }
 
 body {
-  background: #d3efd6;
+  background: #edf6ee;
   color: #0b132b;
-  font-family: 'Andika', sans-serif;
+  font-family: "Andika", sans-serif;
   font-weight: 200;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
   margin-bottom: 0.75em;
 }
+
 img {
- width: 100%;
- display: block;
+  width: 100%;
+  display: block;
 }
 /* end of universal style */
 /* animations */
@@ -34,8 +37,9 @@ img {
     transform: scale(0.75);
   }
 }
+
 @keyframes slideFromLeft {
-  0% { 
+  0% {
     transform: translateX(-1000px);
     opacity: 0;
   }
@@ -45,14 +49,16 @@ img {
   }
   75% {
     transform: translateX(-50px);
-    opacity: 0.75;}
+    opacity: 0.75;
+  }
   100% {
     transform: translateX(0px);
     opacity: 1;
   }
 }
+
 @keyframes slideFromRight {
-  0% { 
+  0% {
     transform: translateX(1000px);
     opacity: 0;
   }
@@ -62,7 +68,8 @@ img {
   }
   75% {
     transform: translateX(50px);
-    opacity: 0.75;}
+    opacity: 0.75;
+  }
   100% {
     transform: translateX(0px);
     opacity: 1;
@@ -70,343 +77,434 @@ img {
 }
 /* end of animations */
 /* navbar styles */
-.navbar{
- margin-bottom: 0.95em;
+.navbar {
+  margin-bottom: 0.95em;
 }
-.navbar .container{
- height: 3.5em;
- width: 90vw;
- margin: 0 auto;
- display: flex;
- flex-wrap: wrap;
- justify-content: space-between;
- align-items: center;
+
+.navbar .container {
+  height: 3.5em;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
-.container ul li{
- margin-left: 0.65em;
- display: inline;
- list-style-type: none;
- position: relative;
+
+.container ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  list-style-type: none;
 }
+
+.container ul li {
+  position: relative;
+}
+
 .container ul li::after {
-  content: '';
+  content: "";
   height: 2px;
   width: 0;
   background: #f6af2d;
-  /* top: 50; */
   left: 0;
   bottom: 0;
   position: absolute;
-  transition: all .5s linear;
+  transition: all 0.5s linear;
 }
-.container ul li:hover::after{
+
+.container ul li:hover::after {
   width: 100%;
 }
-.container ul i{
- margin-right: 0.25em;
+
+.container ul i {
+  margin-right: 0.25em;
 }
-.container ul li a{
- text-decoration: none;
- text-transform: capitalize;
- color: #0b132b;
+
+.container ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #0b132b;
 }
-.logo{
-  font-family:'Andika';
+
+.logo {
+  font-family: "Andika";
   font-size: 1.15rem;
-  letter-spacing: -1px;
-  margin-top:1.35rem;
-  color: rgb(239, 107, 12);
+  letter-spacing: 2px;
+  margin-top: 1.35rem;
+  color: #eab949;
 }
-.container button{
+
+.container button {
   margin-left: 0.85rem;
   padding: 0.5em 1.1em;
-  background: #138a36;
+  background: #2dc059;
+  color: white;
   font-size: medium;
-  font-family: 'Poor Story';
   text-transform: capitalize;
   border: none;
   border-radius: 10px;
-  color: white;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   animation: bounce 2s ease infinite;
 }
-.container button:hover{
+
+.container button:hover {
   transform: translateX(10px) scale(0.9);
   color: #e9b949;
   background: #0b132b;
 }
+
 /* end of navbar styles */
 /* header styles */
-#header{
-  margin: 0 2em;
-  padding: 1.5em;
-}
-.banner img{
-  max-width: 500px;
-  max-height: 500px;
-  object-fit: contain;
-  border-top-left-radius: 40%;
-  border-top-right-radius: 40%;
-  border-bottom-right-radius: 45%;
-  border-bottom-left-radius: 45%;
+#header {
   margin: 0 auto;
-  transition: all .4s linear;
+  padding: 1.5em;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(./images/dodo-vegetable.jpg) center/cover no-repeat fixed;
+  min-height: calc(100vh - 3.5rem);
+  position: relative;
 }
-.banner img:hover{
-  transform: translateX(90px) scale(0.85);
-}
-.banner{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.banner p {
-  color: #f6af2d;
-  font-family: 'bad script';
-  font-weight: 900;
-  font-size: small;
+
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: absolute;
+  top: 28%;
+  left: 33%;
+  align-self: center;
   letter-spacing: 2px;
 }
-.banner .title{
-  font-size: 2rem;
+
+.banner p {
+  color: #f6af2d;
+  font-family: "bad script";
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.banner .title {
   margin-bottom: 0.5em;
+  font-size: 3rem;
+  color: antiquewhite;
   animation: slideFromLeft 5s ease-in-out 2;
 }
-.banner .subtitle{
-  font-family: 'Poor Story';
+
+.banner .subtitle {
+  margin-bottom: 1.25rem;
   font-style: italic;
-  animation: slideFromRight 5s ease-in-out 2;
+  color: antiquewhite;
+  animation: slideFromRight 5s ease-in-out 1;
 }
-.bannerlink{
+
+.bannerlink {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
   background: #138a36;
-  padding: 0.25em 1.5em;
-  border-radius: 3px;
-  transition: all .4s ease-out;
+  padding: 0.75em 1.5em;
+  border-radius: 100vw;
+  transition: all 0.4s ease-out;
 }
-.bannerlink:hover{
+
+.bannerlink:hover {
   outline: 2px solid #f6af2d;
   outline-offset: -5px;
-  background: #0b132b;
+  background: transparent;
   color: #cdf9d2;
 }
+
+.banner img {
+  max-width: 500px;
+  max-height: 500px;
+  object-fit: contain;
+  border-top-left-radius: 35%;
+  border-top-right-radius: 35%;
+  border-bottom-right-radius: 35%;
+  border-bottom-left-radius: 35%;
+  margin: 1.5rem auto;
+  transition: all 0.4s linear;
+}
+
+.banner img:hover {
+  transform: translateX(90px) scale(0.85);
+}
+
 /* end of header styles */
-.content-divider{
+.content-divider {
   height: 0.75em;
-  background:linear-gradient( to left, #678e3e, #e9b949, #678e3e);
+  background: linear-gradient(to left, #678e3e, #e9b949, #678e3e);
 }
+
 /* about styles */
-.about-section{
- max-width: 85vw;
- margin: 0 auto;
-}
-#about .about-title{
+
+#about .about-title {
   text-align: center;
   margin-top: 1.5em;
   text-transform: uppercase;
   font-size: 1.2em;
-  animation: slideFromLeft 3s ease-in-out 3;
+  animation: slideFromLeft 3s ease-in-out 2;
 }
+
 .about-title i {
   margin-right: 1rem;
   animation: slideFromRight 3s linear 1;
 }
-.about-image {
-  margin-right: 2em;
-  transition: all .5s linear;
-}
-.about-image img{
-  min-width: 300px;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  transition: all .3s ease-out;
-}
-.about-image img:hover{
-  transform: rotate(-10deg) scale(1.1) translateX(-15px);
-}
-.about-content{
-  display: flex;
+
+.about-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   justify-content: space-between;
   align-items: center;
 }
-.about-info h3{
-  font-family: 'bad script';
+
+.about-image {
+  margin-right: 2em;
+  transition: all 0.5s linear;
+}
+
+.about-image img {
+  /* min-width: 300px; */
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.about-image img:hover {
+  transform: rotate(-10deg) scale(1.1) translateX(-15px);
+}
+
+.about-info h3 {
+  font-family: "bad script";
   text-transform: capitalize;
   letter-spacing: 2px;
   color: #f6af2d;
 }
-.about-info p{
+
+.about-info p {
   text-indent: 30px;
   margin-bottom: 1.5em;
+  min-width: 45ch;
 }
-.abt-btn{
+
+.abt-btn {
   border: none;
   border-radius: 3px;
   cursor: pointer;
   padding: 0.35rem 0.85rem;
   text-transform: capitalize;
-  font-family: 'Vollkorn';
   letter-spacing: 2px;
-  font-size:0.85rem;
+  font-family: "Vollkorn";
+  font-weight: bold;
+  font-size: 0.85rem;
   background: #cdf9d2;
   color: #c8b421;
-  outline: 2px solid #2ead54;
-  transition: all .5s linear;
+  outline: 1.5px solid #2ead54;
+  transition: all 0.5s linear;
 }
-.abt-btn:hover{
+
+.abt-btn:hover {
   outline-offset: -2px;
-  transform: scale(0.85);
+  outline: none;
   background: #138a36;
   font-size: 0.95rem;
+  transform: scale(0.85);
 }
 /* end of about styles */
 /* services styles */
-.services-section{
-  max-width: 90vw;
+.services-section {
+  max-width: 1440px;
   margin: 0 auto;
 }
-#services .service-title{
+
+#services .service-title {
   margin-top: 1.75em;
   text-align: center;
-  font-family:'Vollkorn' ;
- font-size: 1.2rem;
- text-transform: uppercase;
+  font-family: "Vollkorn";
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
-.service-title i{
+
+.service-title i {
   margin-right: 0.75em;
 }
-.service-title h2{
-  font-family: 'grand hotel';
+
+.service-title h2 {
+  font-family: "grand hotel";
   color: #138a36;
   letter-spacing: 2px;
 }
-.services-center{
+
+.services-center {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  flex: 1 1 100%;
+  /* flex: 1 1 100%; */
 }
-.service-card{
+
+.service-card {
   margin: 2em 0.5rem;
-  max-width: 350px;
+  width: 400px;
   border-radius: 10px;
   background: #e9b949;
+  overflow: hidden;
 }
-.service-img-container{
+
+.service-img-container {
   position: relative;
 }
-.service-img{
+
+.service-img {
   height: 23rem;
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.service-icon{
+
+.service-icon {
+  height: 50px;
   background: #cdf9d2;
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translate( -50%, 50%);
-  border: 5px solid #678e3e;
+  transform: translate(-50%, 50%);
+  border: 3px solid #678e3e;
   border-radius: 50%;
   padding: 0.4rem 0.9em;
 }
-.service-info{
+
+.service-info {
   margin-top: 1.75em;
   text-align: center;
   padding: 0.75rem 1rem 0.5rem 1rem;
 }
-.service-info h4{
-  text-transform:capitalize;
+
+.service-info h4 {
+  text-transform: capitalize;
   margin-bottom: 0.75rem;
 }
-.service-info p{
-  /* max-width:20rem; */
+
+.service-info p {
   margin-bottom: 1.5em;
-  text-transform:capitalize;
+  text-transform: capitalize;
   line-height: 1.4;
 }
-.service-btn{
-  padding: 0.5em 1.25em;
+
+.service-btn {
+  padding: 0.25em 1em;
   text-decoration: none;
   text-transform: capitalize;
   font-size: 1.3em;
   font-weight: 900;
-  color: #138a36;
-  border-top:3px solid #0b132b;
+  background-color: #1b923e;
+  color: #e9b949;
+  border-radius: 100vw;
 }
-.service-btn:hover{
+
+.service-btn:hover {
   color: #0b132b;
+  background-color: transparent;
 }
 /* end of service styles */
-.footer{
-  background: #138a36;
+
+.footer {
+  background: #041208;
 }
-.footer .section-center{
-  max-width: 85vw;
-  height: 8rem;
+
+.footer .section-center {
   margin: 0 auto;
+  max-width: 1440px;
+  height: 8rem;
   color: #fff;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
   justify-content: space-between;
   align-items: center;
 }
-.footer-logo{
-  font-size:0.65em;
+
+.footer-logo {
   color: #f6af2d;
-  margin-left: -3em;
-  font-family: 'Caveat';
+  text-align: center;
+  font-size: 0.85em;
+  font-family: "Caveat";
+  letter-spacing: 2px;
 }
+
+.footer-logo h1 {
+  margin-bottom: 0;
+}
+
+.social-icons {
+  text-align: center;
+}
+
 .social-icons a {
-  color: wheat;
+  color: white;
   font-size: 1.5em;
   margin: 0 0.35em;
 }
-#date{
-  font-family: 'bad script';
+
+.social-icons a:hover {
+  color: wheat;
 }
-.company{
+
+#date {
+  font-family: "bad script";
+  margin-left: 5px;
+}
+
+.company {
   color: #e9b949;
 }
-.footer-text{
-  font-family: 'Poor Story';
+
+.footer-text {
   text-transform: capitalize;
+  text-align: center;
   letter-spacing: 2px;
 }
-.section-center h5{
-  font-family: 'Poor Story';
+
+.section-center h5 {
+  text-align: center;
   letter-spacing: 2px;
   word-spacing: 3px;
 }
 /* end of footer styles */
+
 /* contact html styles */
 .contact-section {
   margin: 0;
   padding: 2rem;
   background: #e9b949;
 }
+
 .contact-center {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   align-items: center;
 }
+
 .contact-info .contact-item {
-  margin-bottom: 0.85rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  text-align: center;
 }
+
 .contact-title {
   margin-bottom: 0.5rem;
   text-transform: uppercase;
-  font-family: 'Bilbo';
+  font-family: "Bilbo";
   letter-spacing: 2px;
 }
+
 .contact-item .contact-text {
   text-transform: capitalize;
-  font-family: 'Almendra', serif;
+  font-family: "Almendra", serif;
   letter-spacing: 2px;
 }
-.contact-form{
+
+.contact-form {
   width: 50%;
   margin: 0 auto;
   display: flex;
@@ -414,264 +512,340 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+
 .contact-form .form-text {
   text-align: center;
-  font-family: 'Poor Story';
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: 600;
+  width: 35ch;
+}
+
+.contact-form .ctf-span {
+  color: #138a36;
 }
 .form-group {
   display: grid;
   justify-content: space-between;
   align-items: center;
 }
-.form-group span{
+.form-group span {
   margin-bottom: 0.75rem;
 }
 .form-control {
   margin-bottom: 0.75rem;
-  padding:0.75rem;
+  padding: 0.75rem;
   border: none;
   border-radius: 3px;
   text-transform: capitalize;
-  font-family: 'caveat', cursive;
+  font-family: "caveat", cursive;
   font-size: 0.95rem;
 }
 
-  /* media queries for header */
-  @media screen and (max-width:500px) {
-    body{
-      position: relative;
-    }
-    .query-background{
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4))
-      ,url(./images/takeaway-chicken-toast-fanta.jpg) center/cover no-repeat fixed;
-      /* background-position: center; */
-      /* background-size: cover; */
-    }
-    nav{
-      width: 100%;
-      height: 12rem;
-    }
-    .navbar .container{
-      margin-bottom: 2rem;
-      display: flex;
-      flex-wrap: nowrap;
-      flex-direction: column;
-      justify-content:space-between;
-      align-items: center;
-    }
-    .logo{
-      margin: 0 auto;
-      font-size: 0.95rem;
-      text-indent: -100px;
-    }
-    .logo h1{
-      margin-bottom: 0.35rem;
-      color: #e9b949;
-    }
-    .container ul li{
-      margin-top: 0.75rem;
-      margin-bottom: 0.5rem;
-      font-size: 0.85rem;
-      display: block;
-      justify-content: space-between;
-      position: relative;
-    }
-    .container ul li::after{
-      content: "";
-      height: 2px;
-      width: 0;
-      background: #0cd749;
-      left: 0;
-      bottom: 25;
-      position: absolute;
-      transition: .5s ease-in-out;
-    }
-    .container ul li:hover::after{
-      width: 100%;
-    }
-    .container ul li a{
-      color: antiquewhite;
-      letter-spacing: 5px;
-      font-weight: 600;
-    }
-    .container button{
-      margin-top: 1.5rem;
-      letter-spacing: 3px;
-    }
-    .container button:hover{
-      background: #e9b949;
-      color: #0b132b;
-    }
-    #header{
-      margin-top: 0.25rem auto;
-      padding: 0.25rem 0.5rem;
-      min-height: calc( 100vh - 12rem);
-    }
-    #header img{
-      display: none;
-    }
-    .banner{
-      position: absolute;
-      top: 6.5%;
-      right: 16%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      transform: translateY(100px);
-    }
-    .banner p {
-      text-indent: -50px;
-      color: #ffffff;
-      letter-spacing: 3px;
-    }
-    .banner .title{
-      color: #e9b949;
-    }
-    .banner .subtitle{
-      color: #cdf9d2;
-      text-indent: -50px;
-    }
-    .bannerlink:hover {
-      background: transparent;
-      outline-offset: 20px solid;
-    }
-/* end of nav and header media queries */
-/* about section media queries */
-    .about-section{
-      width: 90vw;
-      margin: 0 auto;
-    }
-    .about-content{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .about-image {
-      width: 70vw;
-      margin: 0.25rem auto;
-      position: relative;
-    }
-    .about-image::before {
-      content: '';
-      border:2px solid #f6af2d;
-      width: 100%;
-      height: 100%;
-      box-sizing: border-box;
-      position: absolute;
-      top: -20px;
-      left: -25px;
-      z-index: -2;
-      transition: all .7s ease-in-out;
-    }
-    .about-image::after {
-      content: '';
-      background: rgba(0, 0, 0, 0.4);
-      width: 100%;
-      height: 100%;
-      box-sizing: border-box;
-      position: absolute;
-      top: -10px;
-      left: -15px;
-      z-index: -1;
-      transition: all .7s ease-in-out;
-    }
-    .about-image img:hover{
-      transform: none;
-    }
-    .about-image:hover::before,
-    .about-image:hover::after {
-      top: 0;
-      left: 0;
-    }
-    .about-info h3{
-      margin-top: 1.3rem;
-      letter-spacing: 3px;
-    }
-    .about-info p {
-      text-indent: 0;
-      font-size: 0.85rem;
-    }
-    /* end of about section media queries */
-    /* service section media queries */
-    .services-section {
-      max-width: 90vw;
-      margin: 0 auto;
-    }
-    .service-card {
-      margin: 0.75rem auto;
-      /* width: 20%; */
-    }
-    .service-img {
-      height: 12rem;
-      width: 100%;
-      object-fit: cover;
-    }
-    .service-info {
-      height: 6rem;
-      margin-top: 0.75rem;
-      text-align: center;
-    }
-    .service-info h4{
-      margin-bottom: 0.25rem;
-      font-size: 0.75rem;
-    }
-    .service-info p {
-      font-size: 0.75rem;
-      line-height: 1;
-      margin-bottom: 0.75rem;
-    }
-    .service-btn {
-      padding: 0.35em 1.25em;
-      text-decoration: none;
-      text-transform: capitalize;
-      font-size: 1em;
-      font-weight: 400;
-      color: #138a36;
-      border-top: 2px solid #0b132b;
-    }
-    /* footer styles media query */
-    .footer .section-center {
-      height: auto;
-      width: 100vw;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items:center;
-    }
-    .footer .social-icons {
-      margin-bottom: 0.75rem;
-      align-self: flex-start;
-    }
-    .footer .footer-text {
-      align-self: flex-end;
-      margin-bottom: 0.75rem;
-    }
-    .footer h5{
-      align-self: flex-start;
-    }
-    /* contact html styles media query */
-    .contact-nav {
-      background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-      url(./images/takeaway-chicken-toast-fanta.jpg);
-      background-position: center;
-      background-size: cover;
-      background-attachment: scroll;
-    }
-    .contact-section {
-      margin-top: 4rem;
-    }
-    .contact-center {
-      width: 100%;
-      display: grid;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .contact-form {
-      width: 100%;
-    }
+/* media queries for header */
+@media screen and (max-width: 450px) {
+  body {
+    position: relative;
   }
+  .query-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+      url(./images/takeaway-chicken-toast-fanta.jpg) center/cover no-repeat
+        fixed;
+    /* background-position: center; */
+    /* background-size: cover; */
+  }
+
+  nav {
+    margin: 0 auto;
+    width: 100%;
+    height: 12rem;
+  }
+
+  .navbar .container {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container ul {
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .container ul li::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    background: #0cd749;
+    left: 0;
+    bottom: 25;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+  }
+
+  .container ul li:hover::after {
+    width: 100%;
+  }
+
+  .container ul li a {
+    color: antiquewhite;
+    letter-spacing: 5px;
+    font-weight: 600;
+  }
+
+  .container button {
+    margin-top: 1.5rem;
+    font-family: "Bilbo";
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .container button:hover {
+    background: #e9b949;
+    color: #0b132b;
+  }
+
+  #header {
+    margin-top: 0.25rem auto;
+    padding: 0.25rem 0.5rem;
+    background: none;
+    min-height: calc(100vh - 12rem);
+    overflow: hidden;
+  }
+
+  .banner {
+    position: absolute;
+    top: 3%;
+    left: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(150px);
+  }
+
+  .banner p {
+    text-indent: -30px;
+    font-size: 1.25rem;
+    color: #ffffff;
+    letter-spacing: 3px;
+  }
+
+  .banner .title {
+    color: #e9b949;
+    font-size: 2rem;
+  }
+
+  .banner .subtitle {
+    margin-bottom: 1.25rem;
+    color: #cdf9d2;
+    text-indent: -30px;
+  }
+
+  .bannerlink:hover {
+    background: transparent;
+    outline-offset: 15px solid;
+  }
+  /* end of nav and header media queries */
+  /* about section media queries */
+  .about-section {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .about-image {
+    width: 80vw;
+    margin: 0.25rem auto;
+    position: relative;
+  }
+
+  .about-image::before {
+    content: "";
+    border: 2px solid #f6af2d;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: -20px;
+    left: -25px;
+    z-index: -2;
+    transition: all 0.7s ease-in-out;
+  }
+
+  .about-image::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    z-index: -1;
+    transition: all 0.7s ease-in-out;
+  }
+
+  .about-image img:hover {
+    transform: none;
+  }
+
+  .about-image:hover::before,
+  .about-image:hover::after {
+    top: 0;
+    left: 0;
+  }
+
+  .about-info h3 {
+    margin-top: 1.3rem;
+    letter-spacing: 3px;
+  }
+
+  .about-info p {
+    text-indent: 0;
+    font-size: 0.85rem;
+  }
+  /* end of about section media queries */
+  /* service section media queries */
+  .services-section {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+
+  .services-center {
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    margin: 0.75rem auto;
+  }
+
+  .service-img {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .service-info {
+    height: 6rem;
+    margin-top: 0.75rem;
+    text-align: center;
+  }
+
+  .service-info h4 {
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+  }
+
+  .service-info p {
+    font-size: 0.75rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .service-btn {
+    padding: 0.2em 1em;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 0.75em;
+    font-weight: 400;
+  }
+
+  .service-btn:hover {
+  color: #0b132b;
+  background-color: transparent;
+}
+  /* footer styles media query */
+  .footer .section-center {
+    height: auto;
+    margin: 0 auto;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-areas: 
+    'icon logo'
+    'icon four'
+    'icon five';
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    grid-area: logo;
+  }
+
+  .social-icons {
+    grid-area: icon;
+  }
+
+  .section-center h4 {
+    grid-area: four;
+  }
+
+  .section-center h5 {
+    grid-area: five;
+  }
+
+  .footer .social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer .social-icons h4 {
+    display: none;
+  }
+
+  .footer .footer-text {
+    line-height: 2;
+  }
+
+  .footer h5 {
+    text-transform: capitalize;
+    line-height: 2;
+  }
+
+  /* contact html styles media query */
+  .contact-nav {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+      url(./images/takeaway-chicken-toast-fanta.jpg) center/cover no-repeat
+        scroll;
+    /* background-position: center;
+    background-size: cover;
+    background-attachment: scroll; */
+    height: 50vh;
+  }
+  .contact-center {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .contact-info {
+    padding: 0.75rem;
+    grid-row: 2;
+  }
+  .contact-form {
+    padding: 0.75rem;
+    grid-row: 1;
+  }
+
+  .contact-form .form-text {
+    width: 25ch;
+  }
+}
