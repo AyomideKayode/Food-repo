@@ -1,157 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Contact Us</title>
- <!-- stylesheet -->
- <link rel="stylesheet" href="./food.css">
- <!-- fonts -->
-<link
-   href="https://fonts.googleapis.com/css2?family=Almendra:ital@1&family=Andika&family=Bad+Script&family=Bilbo&family=Caveat+Brush&family=Grand+Hotel&family=Poor+Story&family=Roboto:wght@300&family=Vollkorn&display=swap"
-   rel="stylesheet">
- <!-- font-awesome -->
- <link href="fontawesome-free-6.2.0-web/css/all.min.css" rel="stylesheet">
-</head>
-<body>
-   <nav class="navbar contact-nav" id="home">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./food.css" />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almendra:ital@1&family=Andika&family=Bad+Script&family=Bilbo&family=Caveat+Brush&family=Grand+Hotel&family=Vollkorn&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome -->
+    <link href="fontawesome-free-6.2.0-web/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar contact-nav" id="home">
       <div class="container">
-         <div class="logo">
-            <h1>Mummy Ayo's Food Palace</h1>
-         </div>
-         <ul class="nav">
-            <li>
-               <a href="index.html"><i class="fa-solid fa-house"></i>home</a>
-            </li>
-            <li><a href="#about"><i class="fa-solid fa-question"></i>about</a></li>
-            <li><a href="#services"><i class="fa-solid fa-bowl-food"></i>services</a></li>
-            <li><a href="contact.html" target="_blank"><i class="fa-regular fa-address-card"></i>contact</a></li>
-         </ul>
-         <button>order now</button>
+        <div class="logo">
+          <h1>Food Palace</h1>
+        </div>
+        <ul class="nav">
+          <li>
+            <a href="index.html"><i class="fa-solid fa-house"></i>home</a>
+          </li>
+          <li>
+            <a href="#about"><i class="fa-solid fa-question"></i>about</a>
+          </li>
+          <li>
+            <a href="#services"
+              ><i class="fa-solid fa-bowl-food"></i>services</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" target="_blank"
+              ><i class="fa-regular fa-address-card"></i>contact</a
+            >
+          </li>
+        </ul>
+        <button>order now</button>
       </div>
-   </nav>
- <section class="contact-section" id="ContactUs">
-  <div class="contact-center clearfix">
-   <!-- company info -->
-   <article class="contact-info">
-    <!-- contact item -->
-    <div class="contact-item">
-     <h4 class="contact-title">
-      <span class="contact-icon">
-       <i class="fas fa-location-arrow"></i>
-      </span>
-      address
-     </h4>
-     <h4 class="contact-text">
-      234 Billings Way, Oregun
-      <br>
-      Ikeja, Lagos.
-     </h4>
-    </div>
-       <!--end of contact item -->
-       <!-- contact item -->
-    <div class="contact-item">
-     <h4 class="contact-title">
-      <span class="contact-icon">
-       <i class="fas fa-envelope"></i>
-      </span>
-       email
-      </h4>
-      <h4 class="contact-text">
-       foodpalace@gmail.com
-      </h4>
-     </div>
-    <!--end of contact item -->
-    <!-- contact item -->
-    <div class="contact-item">
-     <h4 class="contact-title">
-      <span class="contact-icon">
-       <i class="fas fa-phone"></i>
-      </span>
-      telephone
-     </h4>
-     <h4 class="contact-text">
-      +234 903 310 6560
-     </h4>
-    </div>
-    <!--end of contact item -->
-   </article>
-   <!-- end of company info -->
-   <article class="contact-form">
-    <h3 class="form-text">
-     Thank you for choosing Mummy Ayo's Food Palace. Please fill in the form below to make your enquiries or complaints.
-  </h3>
-  <form action="https://formspree.io/f/{form_id}" method="post">
-   <div class="form-group">
-    <label for="query" class="form-text">Type of    Query</label>
-    <br>
-    <select name="myQuery" class="form-control"  id="query">
-     <option value="sel">Select</option>
-     <option value="ord">Order Related issues</option>
-     <option value="ord">Site Related issues</option>
-        <option value="ord">Complaint Related issues</option>
-        <option value="ord">Delivery Related issues</option>
-        <option value="ord">Others</option>
-       </select>
-       <label for="customerName"></label>
-       <input type="text" name="customerName" class="form-control" id="name" placeholder="name">
-       <label for="customerEmail"></label>
-       <input type="email" name="customerEmail" class="form-control" id="email" placeholder="e-mail">
-       <label for="customerPhoneNo"></label>
-       <input type="text" name="customerPhoneNo" class="form-control" id="phoneno" placeholder="telephone">
-       <label for="elaborate"></label>
-       <textarea name="message" class="form-control" id="" cols="50" rows="10" placeholder="Type your message here"></textarea>
-       <p>Are you a member of our Food Palace community?</p>
-       <span>
-          <input type="radio" name="member" value="Yes"> Yes
-          <input type="radio" name="member" value="No"> No
-          <input type="radio" name="member" value="SignMeUp"> Sign me up
-         </span>
-       <p>Please select how you would like us to serve you;</p>
-       <span>
-          <input type="checkbox" name="customerservice" value="online" id=""> Online
-          <input type="checkbox" name="customerservice" value="homedelivery" id=""> Home Delivery
-          <input type="checkbox" name="customerservice" value="catering" id=""> Catering 
-         </span>
+    </nav>
+    <div class="content-divider"></div>
+    <section class="contact-section" id="ContactUs">
+      <div class="contact-center">
+        <!-- company info -->
+        <article class="contact-info">
+          <!-- contact item -->
+          <div class="contact-item">
+            <h4 class="contact-title">
+              <span class="contact-icon">
+                <i class="fas fa-location-arrow"></i>
+              </span>
+              address
+            </h4>
+            <h4 class="contact-text">
+              234 Billings Way, Oregun
+              <br />
+              Ikeja, Lagos.
+            </h4>
+          </div>
+          <!--end of contact item -->
+          <!-- contact item -->
+          <div class="contact-item">
+            <h4 class="contact-title">
+              <span class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </span>
+              email
+            </h4>
+            <h4 class="contact-text">foodpalace@gmail.com</h4>
+          </div>
+          <!--end of contact item -->
+          <!-- contact item -->
+          <div class="contact-item">
+            <h4 class="contact-title">
+              <span class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </span>
+              telephone
+            </h4>
+            <h4 class="contact-text">+234 903 310 6560</h4>
+          </div>
+          <!--end of contact item -->
+        </article>
+        <!-- end of company info -->
+        <article class="contact-form">
+          <h3 class="form-text">
+            Thank you for choosing <span class="ctf-span">Food Palace&#8482;</span>. Please fill in the
+            form below to make your enquiries or complaints.
+          </h3>
+          <form action="https://formspree.io/f/{form_id}" method="post">
+            <div class="form-group">
+              <label for="query" class="form-text">Type of Query</label>
+              <br />
+              <select name="myQuery" class="form-control" id="query">
+                <option value="sel">Select</option>
+                <option value="ord">Order Related issues</option>
+                <option value="ord">Site Related issues</option>
+                <option value="ord">Complaint Related issues</option>
+                <option value="ord">Delivery Related issues</option>
+                <option value="ord">Others</option>
+              </select>
+              <label for="customerName"></label>
+              <input
+                type="text"
+                name="customerName"
+                class="form-control"
+                id="name"
+                placeholder="name"
+              />
+              <label for="customerEmail"></label>
+              <input
+                type="email" name="customerEmail" class="form-control" id="email" placeholder="e-mail"
+              />
+              <label for="customerPhoneNo"></label>
+              <input
+                type="text"
+                name="customerPhoneNo"
+                class="form-control"
+                id="phoneno"
+                placeholder="telephone"
+              />
+              <label for="elaborate"></label>
+              <textarea
+                name="message"
+                class="form-control"
+                id=""
+                cols="50"
+                rows="10"
+                placeholder="Type your message here"
+              ></textarea>
+              <p>Are you a member of our Food Palace community?</p>
+              <span>
+                <input type="radio" name="member" value="Yes" /> Yes
+                <input type="radio" name="member" value="No" /> No
+                <input type="radio" name="member" value="SignMeUp" /> Sign me up
+              </span>
+              <p>Please select how you would like us to serve you;</p>
+              <span>
+                <input
+                  type="checkbox"
+                  name="customerservice"
+                  value="online"
+                  id=""
+                />
+                Online
+                <input
+                  type="checkbox"
+                  name="customerservice"
+                  value="homedelivery"
+                  id=""
+                />
+                Home Delivery
+                <input
+                  type="checkbox"
+                  name="customerservice"
+                  value="catering"
+                  id=""
+                />
+                Catering
+              </span>
+            </div>
+            <!-- submit/reset -->
+            <input type="submit" class="form-control" value="Submit" />
+            <input type="reset" class="form-control" value="Reset" />
+          </form>
+        </article>
       </div>
-      <!-- submit/reset -->
-      <input type="submit" class="form-control" value="Submit">
-      <input type="reset" class="form-control" value="Reset">
-     </form>
-    </article>
-   </div>
-  </section>
-   <footer class="footer">
+    </section>
+    <footer class="footer">
       <div class="section-center">
-         <div class="footer-logo">
-            <h1>Mummy Ayo's <br>Food Palace&#8482;</h1>
-         </div>
-         <div class="social-icons">
-            <!-- social icon -->
-            <h4 class="footer-text">follow us</h4>
-            <a href="https://twitter.com/kazzy_wiz" class="social-icon">
-               <i class="fab fa-facebook fa-fw"></i>
-            </a>
-            <!-- end of social icon -->
-            <!-- social icon -->
-            <a href="https://twitter.com/kazzy_wiz" target="_blank" class="social-icon">
-               <i class="fab fa-twitter fa-fw"></i>
-            </a>
-            <!-- end of social icon -->
-            <!-- social icon -->
-            <a href="https://twitter.com/kazzy_wiz" class="social-icon">
-               <i class="fab fa-instagram fa-fw"></i>
-            </a>
-            <!-- end of social icon -->
-         </div>
-         <h4 class="footer-text">
-            &copy;<span id="date">2022</span>
-            <span class="company">mummy ayo's food palace</span><br>
-            all rights reserved
-         </h4>
-         <h5>designed and developed by <br> ayomide kayode</h5>
+        <div class="footer-logo">
+          <h1>Food Palace&#8482;</h1>
+        </div>
+        <div class="social-icons">
+          <!-- social icon -->
+          <h4 class="footer-text">follow us</h4>
+          <a href="https://twitter.com/kazzy_wiz" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <!-- end of social icon -->
+          <!-- social icon -->
+          <a
+            href="https://twitter.com/kazzy_wiz"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <!-- end of social icon -->
+          <!-- social icon -->
+          <a href="https://twitter.com/kazzy_wiz" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!-- end of social icon -->
+          <!-- social icon -->
+          <a href="https://github.com/AyomideKayode" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+          <!-- end of social icon -->
+        </div>
+        <h4 class="footer-text">
+          &copy;<span id="date">2022</span>
+          <span class="company">Food Palace&#8482;</span><br />
+          all rights reserved
+        </h4>
+        <h5>
+          designed and developed by <br />
+          ayomide kayode
+        </h5>
       </div>
-   </footer>
-</body>
+    </footer>
+  </body>
 </html>
