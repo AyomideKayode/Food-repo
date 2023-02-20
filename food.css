@@ -543,7 +543,7 @@ img {
 }
 
 /* media queries for header */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 510px) {
   body {
     position: relative;
   }
