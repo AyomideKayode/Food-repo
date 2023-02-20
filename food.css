@@ -343,8 +343,9 @@ img {
 }
 
 .service-card {
-  margin: 2em 0.5rem;
-  width: 400px;
+  margin: 1.25rem 0.5rem;
+  padding-bottom: 0.35rem;
+  max-width: 380px;
   border-radius: 10px;
   background: #e9b949;
   overflow: hidden;
@@ -731,6 +732,7 @@ img {
 
   .service-card {
     margin: 0.75rem auto;
+    padding-bottom: 0.85rem;
   }
 
   .service-img {
